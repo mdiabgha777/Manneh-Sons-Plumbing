@@ -12,6 +12,8 @@
   /* Base */
   --background: hsl(210 40% 98%);
   --foreground: hsl(217 33% 15%);
+  --primary-light: hsl(217 85% 45%);
+  --primary-dark: hsl(217 91% 22%);
 
   /* Surfaces */
   --card: hsl(0 0% 100%);
@@ -74,3 +76,5 @@
 html{
   scroll-behavior: smooth;
 }
+
+
