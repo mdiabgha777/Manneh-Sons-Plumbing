@@ -6,6 +6,7 @@ const VARIANTS = {
   outline: "border border-[var(--input)] hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)]",
   secondary: "bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:bg-[var(--secondary-foreground)]/20",
   ghost: "bg-[var(--accent)] text-white",
+  accent: "bg-[var(--accent)] text-[var(--accent-foreground)] hover:bg-[var(--accent-dark)]",
   link: "text-[var(--primary)] underline-offset-4 hover:underline",
 };
 
@@ -21,12 +22,13 @@ export function Button({
   variant = "default",
   size = "default",
   className = "",
+  component: Component = "button",
   type = "button",
   ...props
 }) {
   return (
-    <button
-      type={type}
+    <Component
+      type={Component === "button" ? type : undefined} // only set type if it's a button
       className={[
         "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium",
         "transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] focus-visible:ring-offset-2",
@@ -35,9 +37,9 @@ export function Button({
         SIZES[size],
         className,
       ].join(" ")}
-      {...props}
+      {...props} // ensures href, target, rel, onClick, etc. work
     >
       {children}
-    </button>
+    </Component>
   );
 }

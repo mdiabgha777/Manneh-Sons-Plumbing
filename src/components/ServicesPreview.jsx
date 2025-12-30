@@ -1,56 +1,10 @@
 import { Link } from "react-router-dom";
-import {
-  Wrench,
-  Droplet,
-  Pipette,
-  ThermometerSun,
-  ShowerHead,
-  AlertTriangle,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import {services} from "../data/services";
 import { Card, CardHeader, CardContent } from "./ui/Card";
 import { Button } from "./ui/Button";
 
-const services = [
-  {
-    icon: AlertTriangle,
-    title: "Emergency Repairs",
-    description:
-      "24/7 emergency plumbing services for burst pipes, severe leaks, and flooding. Fast response when it matters most.",
-  },
-  {
-    icon: Droplet,
-    title: "Leak Detection",
-    description:
-      "Advanced technology to locate hidden leaks in walls, floors, and underground pipes without unnecessary damage.",
-  },
-  {
-    icon: Pipette,
-    title: "Drain Cleaning",
-    description:
-      "Professional drain cleaning for kitchens, bathrooms, and sewer lines. No more slow or clogged drains.",
-  },
-  {
-    icon: Wrench,
-    title: "Pipe Installation",
-    description:
-      "Pipe installation and replacement for new builds, renovations, and aging plumbing systems.",
-  },
-  {
-    icon: ThermometerSun,
-    title: "Water Heaters",
-    description:
-      "Installation and repair of traditional and tankless water heaters to keep hot water reliable and efficient.",
-  },
-  {
-    icon: ShowerHead,
-    title: "Fixture Installation",
-    description:
-      "Expert installation of faucets, toilets, sinks, showers, and bathtubs for modern upgrades.",
-  },
-];
-
-const Services = () => {
+const ServicesPreview = () => {
   return (
     <section
       className="py-16 md:py-24 bg-[var(--background)]"
@@ -111,7 +65,7 @@ const Services = () => {
         {/* CTA */}
         <div className="mt-16 text-center">
           <Link to="/services">
-            <Button variant="primary" size="lg" className="inline-flex gap-2">
+            <Button variant="default" size="lg" className="inline-flex gap-2">
               <span>View All Services</span>
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Button>
@@ -122,4 +76,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesPreview;

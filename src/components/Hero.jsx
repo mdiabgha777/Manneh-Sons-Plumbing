@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section 
-      className="relative bg-gradient-to-br from-[var(--primary)] via-[var(--primary)] to-[var(--primary-dark)] 
+      id="hero" className="relative bg-gradient-to-br from-[var(--primary)] via-[var(--primary)] to-[var(--primary-dark)] 
       overflow-hidden text-white"
       aria-labelledby="hero-heading"
     >
@@ -29,7 +29,6 @@ const Hero = () => {
 
             {/* Heading */}
             <h1 
-              id="hero"
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--primary-foreground)] leading-tight mb-6 animate-slide-up"
               style={{ animationDelay: "0.1s" }}
             >
@@ -55,7 +54,7 @@ const Hero = () => {
               <a href="tel:+2203351530" aria-label="Call for emergency service">
                 <Button variant="ghost" size="lg" className="w-full sm:w-auto">
                   <Phone className="w-5 h-5 cursor-pointer" aria-hidden="true" />
-                  <span>Call (123) 456-7890</span>
+                  <span>Call +2203351530</span>
                 </Button>
               </a>
               <Link to="/services">

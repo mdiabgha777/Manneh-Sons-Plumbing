@@ -1,21 +1,19 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Navbar from "./components/Navbar";
+
+import MainLayout from "./Layout/MainLayout";
 import Index from "./pages/Index";
 
-function App() {
+function App() { 
   return (
     <HelmetProvider>
-      <BrowserRouter>
-        <Navbar />
-        <div>
-          <Routes>
-            <Route path="/" element={<Index />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </HelmetProvider> 
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Index />} />
+          {/* Future pages go here */}
+        </Route>
+      </Routes>
+    </HelmetProvider>
   );
 }
 

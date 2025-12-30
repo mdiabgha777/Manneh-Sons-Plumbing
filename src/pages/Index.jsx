@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "../components/Hero";
-import Services from "../components/Services";
-// import Testimonials from "../components/Testimonials";
-// import Contact from "../components/Contact";
+import ServicesPreview from "../components/ServicesPreview";
+import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
@@ -15,10 +16,7 @@ const Index = () => {
           content="Manneh's Plumbing provides reliable residential and commercial plumbing services. Leak repairs, installations, drain issues, and general plumbing maintenance. Call today."
         />
 
-        {/* Canonical (ONLY if this is your real domain) */}
-        {/* <link rel="canonical" href="https://mannehsplumbing.com" /> */}
-
-        {/* Basic Local Business Schema (safe version) */}
+        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -32,12 +30,13 @@ const Index = () => {
         </script>
       </Helmet>
 
-      <main>
+      <>
         <Hero />
-        <Services />
-       {/*  <Testimonials />
-        <Contact /> */}
-      </main>
+        <ServicesPreview />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </>
     </>
   );
 };
