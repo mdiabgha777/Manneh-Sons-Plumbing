@@ -10,7 +10,7 @@ const ServicesPreview = () => {
       className="py-16 md:py-24 bg-[var(--background)]"
       aria-labelledby="services-heading"
     >
-      <div className="container-custom">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-14">
           <p className="text-[var(--accent)] font-medium mb-3">
@@ -37,7 +37,7 @@ const ServicesPreview = () => {
               <Card
                 key={service.title}
                 hover
-                className="h-full animate-slide-up"
+                className="h-full border border-[var(--ring)] shadow-sm animate-slide-up"
                 style={{ animationDelay: `${index * 0.08}s` }}
               >
                 <CardHeader className="pb-2">

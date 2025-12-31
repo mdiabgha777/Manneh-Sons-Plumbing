@@ -9,7 +9,7 @@ const Testimonials = () => {
       className="py-16 md:py-24 bg-[var(--secondary)]/50"
       aria-labelledby="testimonials-heading"
     >
-      <div className="container-custom">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-14">
           <p className="text-[var(--accent)] font-medium mb-3">Our Clients</p>
@@ -29,7 +29,7 @@ const Testimonials = () => {
           {testimonials.map((t, index) => (
             <Card
               key={t.name}
-              className="h-full animate-slide-up"
+              className="h-full border border-[var(--ring)] shadow-sm animate-slide-up"
               style={{ animationDelay: `${index * 0.08}s` }}
             >
               <CardHeader className="pb-2">

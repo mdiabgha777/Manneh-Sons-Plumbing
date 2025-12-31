@@ -65,16 +65,32 @@
   --muted: hsl(217 30% 18%);
   --muted-foreground: hsl(215 18% 65%);
 
-  --border: hsl(217 30% 22%);
+  --border: hsl(217, 44%, 32%);
   --input: hsl(217 30% 22%);
   --ring: hsl(217 85% 60%);
 
   --destructive: hsl(0 70% 45%);
   --destructive-foreground: hsl(0 0% 100%);
+
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif
 }
 
 html{
   scroll-behavior: smooth;
 }
 
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+  }
+} 

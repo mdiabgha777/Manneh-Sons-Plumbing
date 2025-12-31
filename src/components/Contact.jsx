@@ -50,7 +50,7 @@ const Contact = () => {
 
           {/* Right Info Cards */}
           <div className="space-y-4">
-            <Card className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <Card className="border border-[var(--ring)] animate-slide-up" style={{ animationDelay: "0.1s" }}>
               <CardContent className="flex items-start gap-4 pt-6">
                 <div className="w-12 h-12 bg-[var(--accent)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Clock className="w-6 h-6 text-[var(--accent)]" aria-hidden="true" />
@@ -64,7 +64,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <Card className="border border-[var(--ring)] animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <CardContent className="flex items-start gap-4 pt-6">
                 <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[var(--primary)]" aria-hidden="true" />
@@ -78,7 +78,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            <Card className="border border-[var(--ring)] animate-slide-up" style={{ animationDelay: "0.3s" }}>
               <CardContent className="flex items-start gap-4 pt-6">
                 <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-[var(--primary)]" aria-hidden="true" />
