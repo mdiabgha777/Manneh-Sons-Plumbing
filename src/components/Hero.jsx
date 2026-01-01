@@ -18,7 +18,7 @@ const Hero = () => {
         aria-hidden="true"
       />
 
-      <div className="container relative">
+      <div className=" relative">
         <div className="py-16 px-12 md:py-24 lg:py-32">
           <div className="max-w-3xl">
             {/* Badge */}

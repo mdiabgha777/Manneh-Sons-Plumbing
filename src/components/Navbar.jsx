@@ -29,7 +29,7 @@ function Navbar() {
             aria-label="Manneh's Plumbing - Home"
           >
             <Droplets className="w-8 h-8" aria-hidden="true" />
-            <span>Manneh's Plumbing</span>
+            <span>Manneh & Son's Plumbing</span>
           </Link>
 
           {/* Desktop Navigation */}
