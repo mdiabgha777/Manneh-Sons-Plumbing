@@ -39,8 +39,8 @@ const About = () => {
 
       <main>
         {/* Hero */}
-        <section className="bg-[var(--primary)] py-16 md:py-24 animate-fade-in">
-          <div className="container-custom">
+        <section className="bg-[var(--primary)] py-16 md:py-24">
+          <div className="container-custom animate-slide-in">
             <h1 className="text-4xl md:text-5xl font-bold text-[var(--primary-foreground)] mb-6">
               About Manneh & Sons Plumbing
             </h1>

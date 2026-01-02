@@ -105,7 +105,7 @@ const ServicesPage = () => {
         {/* Hero */}
         <section className="bg-[var(--primary)] py-16 md:py-24">
           <div className="container-custom">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl animate-slide-up">
               <h1 className="text-4xl md:text-5xl font-bold text-[var(--primary-foreground)] mb-6">
                 Our Plumbing Services
               </h1>
@@ -175,7 +175,7 @@ const ServicesPage = () => {
         {/* CTA */}
         <section className="py-16 bg-[var(--primary)]">
           <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--primary-foreground)] mb-4">``
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--primary-foreground)] mb-4">
               Need a Reliable Plumber?
             </h2>
             <p className="text-[var(--primary-foreground)]/90 mb-8 max-w-2xl mx-auto">

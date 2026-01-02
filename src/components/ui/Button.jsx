@@ -4,7 +4,7 @@ const VARIANTS = {
   default: "bg-[var(--primary)] text-[var(--primary-foreground)] hover:bg-[var(--primary-light)]",
   destructive: "bg-[var(--destructive)] text-[var(--destructive-foreground)] hover:bg-[var(--destructive-foreground)]/10",
   outline: "border border-[var(--input)] hover:bg-[var(--accent)] hover:text-[var(--accent-foreground)]",
-  secondary: "bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:bg-[var(--secondary-foreground)]/20",
+  secondary: "bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:bg-[var(--secondary)]/90",
   ghost: "bg-[var(--accent)] text-white",
   accent: "bg-[var(--accent)] text-white hover:bg-[var(--accent)]/90",
   link: "text-[var(--primary)] underline-offset-4 hover:underline",

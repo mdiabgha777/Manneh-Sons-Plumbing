@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[var(--primary)] text-[var(--primary-foreground)]" role="contentinfo">
-      <div className="max-w-7xl mx-auto py-14 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           
           {/* Brand */}
